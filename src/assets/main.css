@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: #f0f0f0;
+  --blue: #64b5ff;
+  --dblue: #007eb4;
+  --dark: #000000;
+  --red: #ff6d40;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(40deg, var(--white) -20%, var(--blue) 100%);
+  background-attachment: fixed;
+}
+
+.title {
+  text-shadow: 2px 2px 2px rgb(102, 102, 102);
+}
+
+.input::placeholder {
+  color: var(--white);
+  opacity: 0.7;
+  padding: 0.5rem;
+}
+
+.slogan {
+  text-shadow: 2px 2px 2px rgb(102, 102, 102);
+}
