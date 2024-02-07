@@ -50,8 +50,8 @@ VITE_MAPS_KEY='VotreCléAPIGoogleMaps'
 Remplacez 'VotreCléAPIGoogleMaps' par votre clé API Google Maps.
 
 ### Scripts disponibles
-`dev`: Démarrer le serveur de développement Vite.
-`build`: Construire le projet pour la production.
-`preview`: Aperçu du build de production localement.
-`lint`: Linter le projet.
-`format`: Formater les fichiers avec Prettier.
+- `dev`: Démarrer le serveur de développement Vite.
+- `build`: Construire le projet pour la production.
+- `preview`: Aperçu du build de production localement.
+- `lint`: Linter le projet.
+- `format`: Formater les fichiers avec Prettier.
