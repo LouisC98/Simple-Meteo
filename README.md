@@ -1,7 +1,7 @@
 # Simple Meteo
 
 Une application météo simple construite avec Vue.js, utilisant l'API Google Maps, Axios pour les requêtes HTTP, l'API open-meteo.com pour les données météorologiques.
-Site web : [Simple]([https://duckduckgo.com](https://simple-meteo.web.app/))
+Site web : [Simple Meteo](https://duckduckgo.com](https://simple-meteo.web.app/)
 
 ## Fonctionnalités
 
