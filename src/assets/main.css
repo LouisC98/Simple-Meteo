@@ -28,7 +28,7 @@ body {
 }
 
 .title {
-  text-shadow: 1px 1px 3px var(--dark);;
+  text-shadow: 1px 1px 3px var(--dark);
 }
 
 .input::placeholder {

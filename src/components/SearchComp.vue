@@ -154,15 +154,16 @@ function getCurrentPosition() {
         {{ result.formatted_address }}
       </div>
     </div>
-    <button 
-    style="text-shadow: 1px 1px 3px var(--dark);"
-    class="bg-dblue py-2 px-3 rounded-2xl shadow-md">
+    <button
+      style="text-shadow: 1px 1px 3px var(--dark)"
+      class="bg-dblue py-2 px-3 rounded-2xl shadow-md"
+    >
       <i class="fa-solid fa-magnifying-glass text-white"></i>
     </button>
   </form>
   <button
     @click="getCurrentPosition"
-    style="text-shadow: 1px 1px 3px var(--dark);"
+    style="text-shadow: 1px 1px 3px var(--dark)"
     class="bg-dblue py-2 px-3 rounded-2xl shadow-md text-white mx-auto mt-6 text-lg font-bold"
   >
     Localisation

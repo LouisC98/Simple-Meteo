@@ -63,7 +63,7 @@ const formatDate = (dateString) => {
         >{{ dailyWeather.apparent_temperature_min[index] }} <sup>°</sup>c min</span
       >
 
-      <div class="flex gap-2 mx-auto" >
+      <div class="flex gap-2 mx-auto">
         <img src="/images/icons/water.png" alt="" class="w-4 my-auto" />
         <span class="my-auto">{{ dailyWeather.rain_sum[index] }} mm</span>
       </div>
