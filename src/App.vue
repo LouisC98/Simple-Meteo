@@ -1,7 +1,7 @@
 <script setup>
 import HeaderComp from './components/HeaderComp.vue'
 import SearchComp from './components/SearchComp.vue'
-import WeatherComp from './components/WeatherComp.vue'
+import CurrentWeatherComp from './components/CurrentWeatherComp.vue'
 import DailyWeatherComp from './components/DailyWeatherComp.vue'
 import HourlyWeatherComp from './components/HourlyWeatherComp.vue'
 </script>
@@ -14,7 +14,7 @@ import HourlyWeatherComp from './components/HourlyWeatherComp.vue'
     <p class="slogan mx-auto my-6 text-white font-bold text-lg">
       Simple Météo, c'est une météo simple, rapide et fiable.
     </p>
-    <WeatherComp />
+    <CurrentWeatherComp />
     <HourlyWeatherComp />
     <DailyWeatherComp />
   </main>

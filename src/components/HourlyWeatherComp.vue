@@ -47,7 +47,7 @@ function formatDate(datetime) {
     <div
       v-for="(item, index) in hourlyWeather.time.slice(0, 13)"
       :key="index"
-      style="width: 120px"
+      style="width: 120px; text-shadow: 1px 1px 3px var(--dark)"
       class="grid grid-cols-1 gap-1 text-white bg-dark bg-opacity-40 p-1 rounded shadow"
     >
       <span class="mx-auto">{{ formatDate(item) }}</span>
@@ -55,10 +55,10 @@ function formatDate(datetime) {
       <span
         style="text-shadow: 1px 1px 3px var(--dark)"
         class="mx-auto text-white text-xl font-bold"
-        >{{ hourlyWeather.temperature_2m[index] }} °c</span
+        >{{ hourlyWeather.temperature_2m[index] }} <sup>°</sup>c</span
       >
       <span style="text-shadow: 1px 1px 3px var(--dark)" class="mx-auto text-white text-sm"
-        >{{ hourlyWeather.apparent_temperature[index] }} °c ressenti</span
+        >{{ hourlyWeather.apparent_temperature[index] }} <sup>°</sup>c ressenti</span
       >
       <div class="flex gap-2 mx-auto">
         <img src="/images/icons/water.png" alt="" class="w-4 my-auto" />

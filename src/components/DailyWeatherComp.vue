@@ -51,19 +51,19 @@ const formatDate = (dateString) => {
     <div
       v-for="(day, index) in dailyWeather.time"
       :key="index"
-      style="width: 115px"
+      style="width: 115px; text-shadow: 1px 1px 3px var(--dark)"
       class="grid grid-cols-1 gap-1 text-white bg-dark bg-opacity-40 p-1 rounded shadow"
     >
       <span class="mx-auto">{{ formatDate(day) }}</span>
       <ImageComp :weather-code="dailyWeather.weather_code[index]" class="w-10 mx-auto" />
-      <span style="text-shadow: 1px 1px 3px var(--dark)" class="mx-auto text-red"
-        >{{ dailyWeather.apparent_temperature_max[index] }} °c</span
+      <span class="mx-auto text-red"
+        >{{ dailyWeather.apparent_temperature_max[index] }} <sup>°</sup>c max</span
       >
-      <span style="text-shadow: 1px 1px 3px var(--dark)" class="mx-auto text-blue"
-        >{{ dailyWeather.apparent_temperature_min[index] }} °c</span
+      <span class="mx-auto text-blue"
+        >{{ dailyWeather.apparent_temperature_min[index] }} <sup>°</sup>c min</span
       >
 
-      <div class="flex gap-2 mx-auto">
+      <div class="flex gap-2 mx-auto" >
         <img src="/images/icons/water.png" alt="" class="w-4 my-auto" />
         <span class="my-auto">{{ dailyWeather.rain_sum[index] }} mm</span>
       </div>

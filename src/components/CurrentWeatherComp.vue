@@ -81,6 +81,7 @@ const weatherCode = computed(() => {
   <div
     v-if="currentWeather"
     class="bg-dark bg-opacity-30 rounded-lg p-2 grid grid-cols-2 gap-1 shadow-lg"
+    style="text-shadow: 1px 1px 3px var(--dark);"
   >
     <div class="col-span-2 text-center">
       <h2 class="text-3xl text-white">{{ city }}</h2>
@@ -92,10 +93,10 @@ const weatherCode = computed(() => {
     </div>
     <div class="grid grid-cols-1">
       <span class="my-auto text-4xl text-white font-bold"
-        >{{ currentWeather.temperature_2m }} °c
+        >{{ currentWeather.temperature_2m }} <sup>°</sup>c
       </span>
       <span class="my-auto text-2xl text-white"
-        >{{ currentWeather.apparent_temperature }} °c <span class="text-base">ressenti</span></span
+        >{{ currentWeather.apparent_temperature }} <sup>°</sup>c <span class="sm:text-base text-sm">ressenti</span></span
       >
       <span class="my-auto text-sm text-white"
         >{{ currentWeather.precipitation }} mm précipitaion</span

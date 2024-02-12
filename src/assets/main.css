@@ -23,14 +23,12 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  background: linear-gradient(40deg, var(--white) -20%, var(--blue) 100%);
+  background: linear-gradient(45deg, var(--white) -20%, var(--blue) 100%);
   background-attachment: fixed;
 }
 
 .title {
-  text-shadow: 2px 2px 2px rgb(102, 102, 102);
+  text-shadow: 1px 1px 3px var(--dark);;
 }
 
 .input::placeholder {
@@ -40,5 +38,5 @@ body {
 }
 
 .slogan {
-  text-shadow: 2px 2px 2px rgb(102, 102, 102);
+  text-shadow: 1px 1px 3px var(--dark);
 }
